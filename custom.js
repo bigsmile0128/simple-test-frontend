@@ -326,6 +326,7 @@ class ComboboxAutocomplete {
       case 'Enter':
         if (this.listboxHasVisualFocus) {
           this.setValue(this.option.textContent);
+          this.option.childNodes[0].checked = !this.option.childNodes[0].checked;
           console.log(this.option.textContent);
         }
         this.close(true);
