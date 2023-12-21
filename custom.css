@@ -28,6 +28,11 @@ position: relative;
 cursor: pointer;
 }
 
+#cb1-listbox:last-child li {
+      display: flex;
+      align-items: center;
+}
+
 .combobox input {
 width: 150px;
 border-right: none;
@@ -40,7 +45,10 @@ padding: 1px 3px;
 width: 19px;
 border-left: none;
 outline: none;
-color: rgb(0 90 156);
+}
+
+.combobox .combo-option {
+      width: 15px;
 }
 
 .combobox button[aria-expanded="true"] svg {
@@ -79,7 +87,7 @@ padding-bottom: 2px;
 .combobox .group.focus,
 .combobox .group:hover {
       padding: 2px;
-      border: 2px solid currentcolor;
+      border: 2px solid white;
       border-radius: 4px;
 }
 
@@ -88,16 +96,8 @@ padding-bottom: 2px;
       fill-opacity: 1;
 }
 
-.combobox .group.focus input,
-.combobox .group.focus button,
-.combobox .group input:hover,
-.combobox .group button:hover {
-      background-color: #def;
-}
-
 [role="listbox"].focus [role="option"][aria-selected="true"],
 [role="listbox"] [role="option"]:hover {
-      background-color: #def;
       padding-top: 0;
       padding-bottom: 0;
       border-top: 2px solid currentcolor;

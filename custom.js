@@ -326,6 +326,7 @@ class ComboboxAutocomplete {
       case 'Enter':
         if (this.listboxHasVisualFocus) {
           this.setValue(this.option.textContent);
+          console.log(this.option.textContent);
         }
         this.close(true);
         this.setVisualFocusCombobox();
@@ -571,6 +572,7 @@ class ComboboxAutocomplete {
 
   onOptionClick(event) {
     this.comboboxNode.value = event.target.textContent;
+    console.log(this.comboboxNode.value);
     this.close(true);
   }
 
