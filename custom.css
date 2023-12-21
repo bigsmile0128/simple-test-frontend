@@ -1,0 +1,35 @@
+.x-container {
+      margin: auto;
+      width: 150;
+      height: 100px;
+}
+
+select, option {
+      width: 150px;
+      height: 30px;
+      font-size: 15px;
+}
+
+option {
+      color: #ffffff;
+}
+
+.caption-white {
+      background-color: #ffffff;
+}
+
+.caption-yellow {
+      background-color: yellow;
+}
+
+.caption-green {
+      background-color: green;
+}
+
+.caption-blue {
+      background-color: blue;
+}
+
+.caption-red {
+      background-color: red;
+}
